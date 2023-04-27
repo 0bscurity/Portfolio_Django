@@ -1,0 +1,439 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}Andrew Hawk • portfolio{% endblock %}
+
+{% block content %}
+
+  <div class="container-fluid min-vh-100">
+
+    <div class="container text-white">
+      <div class="p-md-2 m-md-2">
+        <div class="p-lg-3 mx-auto my-2 my-md-5">
+          <div class="row mx-auto py-4 py-md-5" id="about">
+
+            <div class="col-md-4 my-auto text-center py-2">
+              <img class="img-fluid shadow-lg rounded-circle me-md-5"
+                   src="{% static 'images/profile_picture.jpg' %}"
+                   alt="Profile Picture" width="300"/>
+            </div>
+
+            <div class="col-md-8 my-auto fade-in-2 py-2">
+              <h1>Welcome to my portfolio! <strong>I'm Andrew</strong>, a Web
+                Developer with a passion for
+                <strong>exceptional design.</strong></h1>
+            </div>
+          </div>
+
+
+          <h1 class="text-start pt-5 pb-2" style="font-weight: 500">
+            <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" fill="currentColor"
+                 class="bi bi-person-bounding-box pop-up mb-2" viewBox="0 0 16 16">
+              <path
+                  d="M1.5 1a.5.5 0 0 0-.5.5v3a.5.5 0 0 1-1 0v-3A1.5 1.5 0 0 1 1.5 0h3a.5.5 0 0 1 0 1h-3zM11 .5a.5.5 0 0 1 .5-.5h3A1.5 1.5 0 0 1 16 1.5v3a.5.5 0 0 1-1 0v-3a.5.5 0 0 0-.5-.5h-3a.5.5 0 0 1-.5-.5zM.5 11a.5.5 0 0 1 .5.5v3a.5.5 0 0 0 .5.5h3a.5.5 0 0 1 0 1h-3A1.5 1.5 0 0 1 0 14.5v-3a.5.5 0 0 1 .5-.5zm15 0a.5.5 0 0 1 .5.5v3a1.5 1.5 0 0 1-1.5 1.5h-3a.5.5 0 0 1 0-1h3a.5.5 0 0 0 .5-.5v-3a.5.5 0 0 1 .5-.5z"></path>
+              <path d="M3 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1H3zm8-9a3 3 0 1 1-6 0 3 3 0 0 1 6 0z"></path>
+            </svg>
+            <span class="ms-2">About Me</span>
+          </h1>
+
+          <hr style="color: black">
+
+          <div class="row">
+            <div class="col-12 col-md-8 mx-auto pb-5">
+
+              <div class="p-3 rounded" style="background-color: #212529">
+                <p class="fs-5">
+                  I am a highly motivated junior software developer with a focus on Python and the Django framework.
+                  I possess a strong understanding of the fundamentals of Django, including its architecture, data
+                  modeling, and templating language. I also have experience working with other related technologies
+                  such as postgres, docker, and bootstrap.
+                  <br><br>
+                  I am deeply committed to continuous learning, as I believe
+                  it is the key to personal and professional growth.
+                </p>
+
+              </div>
+            </div>
+
+
+            <div class="col-12 col-md-4 mx-auto my-auto text-center">
+
+              <a href="#" class="resume-link" style="text-decoration: none" aria-label="Link to view resume"
+                 data-bs-target="#pdfModal" data-bs-toggle="modal">
+                <i class="fa-regular fa-file-pdf fa-5x"></i>
+
+                <h3 class="text-center pt-4">RESUME</h3>
+              </a>
+
+              <div class="modal fade" id="pdfModal" tabindex="-1" aria-labelledby="pdfModalLabel"
+                   aria-hidden="true">
+                <div class="modal-dialog modal-xl">
+                  <div class="modal-content bg-dark vh-100">
+                    <div class="modal-header">
+                      <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                      <iframe src="{% static 'files/andrew_hawk_resume.pdf' %}" width="100%" height="100%"></iframe>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+
+          <div class="row pt-3">
+
+            <div class="col-md-12 mx-auto" id="stack">
+
+              <h1 class="text-start pt-5 pb-2" style="font-weight: 500">
+                <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" fill="currentColor"
+                     class="bi bi-stack pop-up mb-2"
+                     viewBox="0 0 16 16">
+                  <path
+                      d="m14.12 10.163 1.715.858c.22.11.22.424 0 .534L8.267 15.34a.598.598 0 0 1-.534 0L.165 11.555a.299.299 0 0 1 0-.534l1.716-.858 5.317 2.659c.505.252 1.1.252 1.604 0l5.317-2.66zM7.733.063a.598.598 0 0 1 .534 0l7.568 3.784a.3.3 0 0 1 0 .535L8.267 8.165a.598.598 0 0 1-.534 0L.165 4.382a.299.299 0 0 1 0-.535L7.733.063z"></path>
+                  <path
+                      d="m14.12 6.576 1.715.858c.22.11.22.424 0 .534l-7.568 3.784a.598.598 0 0 1-.534 0L.165 7.968a.299.299 0 0 1 0-.534l1.716-.858 5.317 2.659c.505.252 1.1.252 1.604 0l5.317-2.659z"></path>
+                </svg>
+                <span class="ms-2">My Stack</span>
+              </h1>
+
+              <hr style="color: black">
+
+              <div class="row mx-auto">
+
+                <div class="col-md-4 text-center">
+                  <h2 class="py-3">Frontend</h2>
+
+                  <div class="d-flex flex-wrap align-items-center justify-content-center text-center"
+                       style="font-size: medium">
+                    <p class="px-3 stack-icon">
+                      <img class="img-fluid d-block mb-1 text-center mx-auto" src="{% static 'images/bootstrap.png' %}"
+                           alt="Bootstrap"
+                           width="60">
+                      Bootstrap
+                    </p>
+                    <p class="px-3 stack-icon">
+                      <img class="img-fluid d-block mb-1 text-center mx-auto rounded"
+                           src="{% static 'images/html.png' %}"
+                           alt="HTML" width="50">
+                      HTML
+                    </p>
+                    <p class="px-3 stack-icon">
+                      <img class="img-fluid d-block mb-1 text-center mx-auto rounded"
+                           src="{% static 'images/css.png' %}"
+                           alt="CSS" width="50">
+                      CSS
+                    </p>
+                    <p class="px-3 stack-icon">
+                      <img class="img-fluid d-block mb-1 text-center mx-auto rounded"
+                           src="{% static 'images/javascript.png' %}"
+                           alt="Javascript" width="75">
+                      Javascript
+                    </p>
+                  </div>
+                </div>
+
+                <div class="col-md-4 mx-auto text-center">
+                  <h2 class="py-3">Backend</h2>
+
+                  <div class="d-flex flex-wrap align-items-center justify-content-center text-center"
+                       style="font-size: medium">
+                    <p class="px-3 stack-icon">
+                      <img class="img-fluid d-block mb-1 mx-auto" src="{% static 'images/python.png' %}" alt="Python"
+                           width="50">
+                      Python
+                    </p>
+                    <p class="px-3 stack-icon">
+                      <img class="img-fluid d-block mb-1 text-center mx-auto rounded"
+                           src="{% static 'images/postgre.png' %}"
+                           alt="PostgreSQL" width="50">
+                      PostgreSQL
+                    </p>
+                    <p class="px-3 stack-icon">
+                      <img class="img-fluid d-block mb-1 text-center mx-auto rounded"
+                           src="{% static 'images/docker.png' %}"
+                           alt="Docker" width="65">
+                      Docker
+                    </p>
+                  </div>
+                </div>
+
+                <div class="col-md-4 mx-auto text-center">
+                  <h2 class="py-3">Frameworks</h2>
+
+                  <div class="d-flex flex-wrap align-items-center justify-content-center text-center pt-2"
+                       style="font-size: medium">
+                    <p class="px-3 stack-icon">
+                      <img class="img-fluid d-block mb-1 text-center mx-auto" src="{% static 'images/django.png' %}"
+                           alt="Django" width="50">
+                      Django
+                    </p>
+                    <p class="px-3 stack-icon">
+                      <img class="img-fluid d-block mb-1 text-center mx-auto" src="{% static 'images/jquery.png' %}"
+                           alt="jQuery" width="50">
+                      jQuery
+                    </p>
+                  </div>
+                </div>
+
+              </div>
+
+            </div>
+          </div>
+
+          <div class="row pt-3">
+
+            <div class="col-md-12 mx-auto" id="projects">
+
+              <h1 class="text-start pt-5 pb-2" style="font-weight: 500">
+                <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" fill="currentColor"
+                     class="bi bi-git pop-up mb-2"
+                     viewBox="0 0 16 16">
+                  <path
+                      d="M15.698 7.287 8.712.302a1.03 1.03 0 0 0-1.457 0l-1.45 1.45 1.84 1.84a1.223 1.223 0 0 1 1.55 1.56l1.773 1.774a1.224 1.224 0 0 1 1.267 2.025 1.226 1.226 0 0 1-2.002-1.334L8.58 5.963v4.353a1.226 1.226 0 1 1-1.008-.036V5.887a1.226 1.226 0 0 1-.666-1.608L5.093 2.465l-4.79 4.79a1.03 1.03 0 0 0 0 1.457l6.986 6.986a1.03 1.03 0 0 0 1.457 0l6.953-6.953a1.031 1.031 0 0 0 0-1.457"></path>
+                </svg>
+                <span class="ms-2">Projects</span>
+              </h1>
+
+              <hr style="color: black">
+
+
+              <div class="row">
+                <h2 class="py-3 text-end">
+                  Tax Calculator
+                </h2>
+
+                <div class="col-lg-7 my-auto py-2" data-bs-theme="dark">
+
+                  <div id="carouselIndicators" class="carousel slide carousel-fade">
+                    <div class="carousel-indicators">
+                      <button type="button" data-bs-target="#carouselIndicators" data-bs-slide-to="0"
+                              class="active" aria-current="true" aria-label="Slide 1"></button>
+                      <button type="button" data-bs-target="#carouselIndicators" data-bs-slide-to="1"
+                              aria-label="Slide 2"></button>
+                    </div>
+                    <div class="carousel-inner">
+                      <div class="carousel-item active">
+                        <img src="{% static 'images/projects/landing_calc.png' %}"
+                             class="d-block w-100 rounded project-image"
+                             alt="Tax Calculator Image" aria-label="Tax Calculator Images" data-bs-toggle="tooltip"
+                             data-bs-title="Make image fullscreen" data-bs-placement="top">
+                      </div>
+                      <div class="carousel-item">
+                        <img src="{% static 'images/projects/business_calc.png' %}"
+                             class="d-block w-100 rounded project-image"
+                             alt="Tax Calculator Image" aria-label="Tax Calculator Images" data-bs-toggle="tooltip"
+                             data-bs-title="Make image fullscreen" data-bs-placement="top">
+                      </div>
+                    </div>
+                    <button class="carousel-control-prev me-5" type="button" data-bs-target="#carouselIndicators"
+                            data-bs-slide="prev">
+                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselIndicators"
+                            data-bs-slide="next">
+                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Next</span>
+                    </button>
+                  </div>
+
+                </div>
+
+                <div class="col-lg-5 my-auto py-2">
+
+                  <div class="p-3 rounded" style="background-color: #212529">
+                    <p class="fs-5">
+                      This is my customized tax calculator, created primarily using Django and Bootstrap. It's a
+                      comprehensive tool that incorporates various factors such as self-employment tax, quarterly
+                      payments, and more. I have also utilized Django's authentication system to create an easy-to-use
+                      vehicle mileage tracker that securely stores consumer data. This tool has real-world
+                      applicability, and has helped me plan my finances and stay on top of my tax obligations.
+                    </p>
+
+                    <div class="d-flex justify-content-end">
+                      <span class="d-inline-block" tabindex="0" data-bs-toggle="tooltip" data-bs-placement="bottom"
+                            data-bs-title="COMING SOON">
+                        <a href="#"
+                           class="btn btn-outline-secondary rounded-4 fs-5 me-2 disabled"
+                           aria-label="Link to Hosted app">
+                          View Hosted App
+                          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                               class="bi bi-box-arrow-up-right mb-1 ms-2" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd"
+                                  d="M8.636 3.5a.5.5 0 0 0-.5-.5H1.5A1.5 1.5 0 0 0 0 4.5v10A1.5 1.5 0 0 0 1.5 16h10a1.5 1.5 0 0 0 1.5-1.5V7.864a.5.5 0 0 0-1 0V14.5a.5.5 0 0 1-.5.5h-10a.5.5 0 0 1-.5-.5v-10a.5.5 0 0 1 .5-.5h6.636a.5.5 0 0 0 .5-.5z"></path>
+                            <path fill-rule="evenodd"
+                                  d="M16 .5a.5.5 0 0 0-.5-.5h-5a.5.5 0 0 0 0 1h3.793L6.146 9.146a.5.5 0 1 0 .708.708L15 1.707V5.5a.5.5 0 0 0 1 0v-5z"></path>
+                          </svg>
+                        </a>
+                      </span>
+                      <a href="https://github.com/0bscurity/estimatedTaxCalculator"
+                         class="btn btn-secondary rounded-4 fs-5" aria-label="Link to View on Github"
+                         rel="noopener" target="_blank">
+                        View on Github
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                             class="bi bi-box-arrow-up-right mb-1 ms-2" viewBox="0 0 16 16">
+                          <path fill-rule="evenodd"
+                                d="M8.636 3.5a.5.5 0 0 0-.5-.5H1.5A1.5 1.5 0 0 0 0 4.5v10A1.5 1.5 0 0 0 1.5 16h10a1.5 1.5 0 0 0 1.5-1.5V7.864a.5.5 0 0 0-1 0V14.5a.5.5 0 0 1-.5.5h-10a.5.5 0 0 1-.5-.5v-10a.5.5 0 0 1 .5-.5h6.636a.5.5 0 0 0 .5-.5z"></path>
+                          <path fill-rule="evenodd"
+                                d="M16 .5a.5.5 0 0 0-.5-.5h-5a.5.5 0 0 0 0 1h3.793L6.146 9.146a.5.5 0 1 0 .708.708L15 1.707V5.5a.5.5 0 0 0 1 0v-5z"></path>
+                        </svg>
+                      </a>
+                    </div>
+
+                  </div>
+
+                </div>
+
+                <div class="row pt-4">
+                  <h2 class="py-3 text-start">
+                    Static Brand Page
+                  </h2>
+
+                  <div class="col-lg-5 my-auto py-2">
+
+                    <div class="p-3 rounded" style="background-color: #212529">
+                      <p class="fs-5">
+                        What began as a simple and modern brand page has evolved into a versatile website
+                        that could be customized to fit any number of scenarios. With its use of tasteful CSS animations
+                        and scripts, this page offers an exceptional user experience that is intuitive and minimalistic.
+                        While this project may just seem like a simple webpage, it further taught me the importance (and
+                        joy) of writing clean code that inevitably results in an amazing user experience.
+                      </p>
+
+                      <div class="d-flex justify-content-end">
+                        <span class="d-inline-block" tabindex="0" data-bs-toggle="tooltip" data-bs-placement="bottom"
+                              data-bs-title="COMING SOON">
+                          <a href="#"
+                             class="btn btn-outline-secondary rounded-4 fs-5 me-2 disabled"
+                             aria-label="Link to Hosted app">
+                            View Hosted App
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                 class="bi bi-box-arrow-up-right mb-1 ms-2" viewBox="0 0 16 16">
+                              <path fill-rule="evenodd"
+                                    d="M8.636 3.5a.5.5 0 0 0-.5-.5H1.5A1.5 1.5 0 0 0 0 4.5v10A1.5 1.5 0 0 0 1.5 16h10a1.5 1.5 0 0 0 1.5-1.5V7.864a.5.5 0 0 0-1 0V14.5a.5.5 0 0 1-.5.5h-10a.5.5 0 0 1-.5-.5v-10a.5.5 0 0 1 .5-.5h6.636a.5.5 0 0 0 .5-.5z"></path>
+                              <path fill-rule="evenodd"
+                                    d="M16 .5a.5.5 0 0 0-.5-.5h-5a.5.5 0 0 0 0 1h3.793L6.146 9.146a.5.5 0 1 0 .708.708L15 1.707V5.5a.5.5 0 0 0 1 0v-5z"></path>
+                            </svg>
+                          </a>
+                        </span>
+                        <a href="https://github.com/0bscurity/estimatedTaxCalculator"
+                           class="btn btn-secondary rounded-4 fs-5" aria-label="Link to View on Github"
+                           rel="noopener" target="_blank">
+                          View on Github
+                          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                               class="bi bi-box-arrow-up-right mb-1 ms-2" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd"
+                                  d="M8.636 3.5a.5.5 0 0 0-.5-.5H1.5A1.5 1.5 0 0 0 0 4.5v10A1.5 1.5 0 0 0 1.5 16h10a1.5 1.5 0 0 0 1.5-1.5V7.864a.5.5 0 0 0-1 0V14.5a.5.5 0 0 1-.5.5h-10a.5.5 0 0 1-.5-.5v-10a.5.5 0 0 1 .5-.5h6.636a.5.5 0 0 0 .5-.5z"></path>
+                            <path fill-rule="evenodd"
+                                  d="M16 .5a.5.5 0 0 0-.5-.5h-5a.5.5 0 0 0 0 1h3.793L6.146 9.146a.5.5 0 1 0 .708.708L15 1.707V5.5a.5.5 0 0 0 1 0v-5z"></path>
+                          </svg>
+                        </a>
+                      </div>
+
+                    </div>
+
+                  </div>
+                  <div class="col-lg-7 my-auto py-2" data-bs-theme="dark">
+
+                    <div id="carouselIndicatorsStatic" class="carousel slide carousel-fade">
+                      <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#carouselIndicatorsStatic" data-bs-slide-to="0"
+                                class="active" aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#carouselIndicatorsStatic" data-bs-slide-to="1"
+                                aria-label="Slide 2"></button>
+                        <button type="button" data-bs-target="#carouselIndicatorsStatic" data-bs-slide-to="2"
+                                aria-label="Slide 3"></button>
+                        <button type="button" data-bs-target="#carouselIndicatorsStatic" data-bs-slide-to="3"
+                                aria-label="Slide 4"></button>
+                      </div>
+                      <div class="carousel-inner">
+                        <div class="carousel-item active">
+                          <img src="{% static 'images/projects/homepage_img.png' %}"
+                               class="d-block w-100 rounded project-image"
+                               alt="Tax Calculator Image" aria-label="Static Brand Images" data-bs-toggle="tooltip"
+                               data-bs-title="Make image fullscreen" data-bs-placement="top">
+                        </div>
+                        <div class="carousel-item">
+                          <img src="{% static 'images/projects/homepage_bottom_img.png' %}"
+                               class="d-block w-100 rounded project-image"
+                               alt="Tax Calculator Image" aria-label="Static Brand Images" data-bs-toggle="tooltip"
+                               data-bs-title="Make image fullscreen" data-bs-placement="top">
+                        </div>
+                        <div class="carousel-item">
+                          <img src="{% static 'images/projects/services_img.png' %}"
+                               class="d-block w-100 rounded project-image"
+                               alt="Tax Calculator Image" aria-label="Static Brand Images" data-bs-toggle="tooltip"
+                               data-bs-title="Make image fullscreen" data-bs-placement="top">
+                        </div>
+                        <div class="carousel-item">
+                          <img src="{% static 'images/projects/about_img.png' %}"
+                               class="d-block w-100 rounded project-image"
+                               alt="Tax Calculator Image" aria-label="Static Brand Images" data-bs-toggle="tooltip"
+                               data-bs-title="Make image fullscreen" data-bs-placement="top">
+                        </div>
+                      </div>
+                      <button class="carousel-control-prev me-5" type="button"
+                              data-bs-target="#carouselIndicatorsStatic"
+                              data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                      </button>
+                      <button class="carousel-control-next" type="button" data-bs-target="#carouselIndicatorsStatic"
+                              data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                      </button>
+                    </div>
+
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="row pt-3 pb-5">
+
+            <div class="col-md-12 mx-auto" id="contact">
+
+              <h1 class="text-start pt-5 pb-2" style="font-weight: 500">
+                <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" fill="currentColor"
+                     class="bi bi-envelope-at-fill pop-up mb-2" viewBox="0 0 16 16">
+                  <path
+                      d="M2 2A2 2 0 0 0 .05 3.555L8 8.414l7.95-4.859A2 2 0 0 0 14 2H2Zm-2 9.8V4.698l5.803 3.546L0 11.801Zm6.761-2.97-6.57 4.026A2 2 0 0 0 2 14h6.256A4.493 4.493 0 0 1 8 12.5a4.49 4.49 0 0 1 1.606-3.446l-.367-.225L8 9.586l-1.239-.757ZM16 9.671V4.697l-5.803 3.546.338.208A4.482 4.482 0 0 1 12.5 8c1.414 0 2.675.652 3.5 1.671Z"></path>
+                  <path
+                      d="M15.834 12.244c0 1.168-.577 2.025-1.587 2.025-.503 0-1.002-.228-1.12-.648h-.043c-.118.416-.543.643-1.015.643-.77 0-1.259-.542-1.259-1.434v-.529c0-.844.481-1.4 1.26-1.4.585 0 .87.333.953.63h.03v-.568h.905v2.19c0 .272.18.42.411.42.315 0 .639-.415.639-1.39v-.118c0-1.277-.95-2.326-2.484-2.326h-.04c-1.582 0-2.64 1.067-2.64 2.724v.157c0 1.867 1.237 2.654 2.57 2.654h.045c.507 0 .935-.07 1.18-.18v.731c-.219.1-.643.175-1.237.175h-.044C10.438 16 9 14.82 9 12.646v-.214C9 10.36 10.421 9 12.485 9h.035c2.12 0 3.314 1.43 3.314 3.034v.21Zm-4.04.21v.227c0 .586.227.8.581.8.31 0 .564-.17.564-.743v-.367c0-.516-.275-.708-.572-.708-.346 0-.573.245-.573.791Z"></path>
+                </svg>
+                <span class="ms-2">Contact Me</span>
+              </h1>
+
+              <hr style="color: black">
+
+              <div class="row">
+
+              </div>
+
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script>
+
+      $(document).ready(function () {
+          $(".project-image").click(function () {
+              this.requestFullscreen()
+          })
+      });
+
+
+  </script>
+
+
+{% endblock %}
