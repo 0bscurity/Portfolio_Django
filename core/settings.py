@@ -26,7 +26,9 @@ DEBUG = env('DEBUG')
 
 SECRET_KEY = env('SECRET_KEY')
 
-ALLOWED_HOSTS = ['127.0.0.1', 'andrewhawk.dev', 'www.andrewhawk.dev']
+ALLOWED_HOSTS = ['localhost', '0.0.0.0', '127.0.0.1', 'andrewhawk.net', 'www.andrewhawk.net']
+
+CSRF_TRUSTED_ORIGINS = ['https://andrewhawk.net']
 
 # Application definition
 
@@ -119,13 +121,13 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/4.2/howto/static-files/
 
-STATIC_URL = 'static/'
+STATIC_URL = '/static/'
 
 STATICFILES_DIRS = [
     BASE_DIR / "static/",
 ]
 
-# STATIC_ROOT = '/path/to/static/files/'
+STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/4.2/ref/settings/#default-auto-field
