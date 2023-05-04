@@ -18,7 +18,7 @@ body {
 }
 
 .transparent-nav {
-    background-color: rgba(40, 40, 40, 0.5);
+    background-color: rgba(40, 40, 40, 0.9);
     transition: all .5s ease-in-out;
 }
 

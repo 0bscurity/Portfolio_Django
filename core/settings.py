@@ -28,7 +28,7 @@ SECRET_KEY = env('SECRET_KEY')
 
 ALLOWED_HOSTS = ['localhost', '0.0.0.0', '127.0.0.1', 'andrewhawk.net', 'www.andrewhawk.net']
 
-CSRF_TRUSTED_ORIGINS = ['https://andrewhawk.net']
+# CSRF_TRUSTED_ORIGINS = ['https://andrewhawk.net']
 
 # Application definition
 
