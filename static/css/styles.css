@@ -1,5 +1,10 @@
-body {
-    font-family: "Corbel Light", serif;
+/*@font-face {*/
+/*    font-family: "Corbel Light", sans-serif;*/
+/*    src: url('../fonts/DejaVuSansMono.ttf');*/
+/*}*/
+
+* {
+    font-family: 'Nunito', sans-serif;
 }
 
 /* NAVBAR */
