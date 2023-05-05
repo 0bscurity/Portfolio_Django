@@ -28,9 +28,9 @@ SECRET_KEY = env('SECRET_KEY')
 
 ALLOWED_HOSTS = ['localhost', '0.0.0.0', '127.0.0.1', 'andrewhawk.net', 'www.andrewhawk.net']
 
-# CSRF_TRUSTED_ORIGINS = ['https://andrewhawk.net']
+CSRF_TRUSTED_ORIGINS = ['https://www.andrewhawk.net']
 
-# SECURE_PROXY_SSL_HEADER = ("HTTP_X_FORWARDED_PROTO", "https")
+SECURE_PROXY_SSL_HEADER = ("HTTP_X_FORWARDED_PROTO", "https")
 
 # SECURE_SSL_REDIRECT = True
 
