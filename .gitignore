@@ -1,1 +1,2 @@
 /bin/.env
+/nginx/certbot/letsencrypt/

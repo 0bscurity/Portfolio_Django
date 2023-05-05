@@ -30,6 +30,10 @@ ALLOWED_HOSTS = ['localhost', '0.0.0.0', '127.0.0.1', 'andrewhawk.net', 'www.and
 
 # CSRF_TRUSTED_ORIGINS = ['https://andrewhawk.net']
 
+# SECURE_PROXY_SSL_HEADER = ("HTTP_X_FORWARDED_PROTO", "https")
+
+# SECURE_SSL_REDIRECT = True
+
 # Application definition
 
 INSTALLED_APPS = [
