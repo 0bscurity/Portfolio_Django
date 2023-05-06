@@ -21,7 +21,32 @@
             <div class="col-md-8 my-auto fade-in-2 pb-2 pt-5 py-md-2">
               <h1>Welcome to my portfolio! <strong>I'm Andrew</strong>, a Web
                 Developer with a passion for
-                <strong>exceptional design.</strong></h1>
+                <strong>exceptional design.</strong>
+              </h1>
+              <ul class="justify-content-start list-unstyled d-flex">
+                <li class="">
+                  <a class="text-white social-icon" href="https://www.linkedin.com/in/andrew-hawk-450455224/"
+                     rel="noopener"
+                     target="_blank" aria-label="Link to Linkedin profile" data-bs-toggle="tooltip"
+                     data-bs-title="Linkedin Profile" data-bs-placement="bottom" style="display: block">
+                    <i class="fa-brands fa-linkedin fa-2x"></i>
+                  </a>
+                </li>
+                <li class="ms-3">
+                  <a class="text-white social-icon" href="https://github.com/0bscurity" rel="noopener" target="_blank"
+                     aria-label="Link to Github profile" data-bs-toggle="tooltip" data-bs-title="Github Profile"
+                     data-bs-placement="bottom" style="display: block">
+                    <i class="fa-brands fa-square-github fa-2x"></i>
+                  </a>
+                </li>
+                <li class="ms-3">
+                  <a class="text-white social-icon" href="mailto:portfolio@andrewhawk.dev" aria-label="Link to email"
+                     data-bs-toggle="tooltip" data-bs-title="Email Me!" data-bs-placement="bottom"
+                     style="display: block">
+                    <i class="fa-solid fa-square-envelope fa-2x"></i>
+                  </a>
+                </li>
+              </ul>
             </div>
           </div>
 
@@ -39,14 +64,17 @@
           <hr style="color: black">
 
           <div class="row">
-            <div class="col-12 col-md-8 mx-auto pb-5">
+            <div class="col-12 col-md-9 mx-auto pb-5">
 
-              <div class="p-3 rounded" style="background-color: #212529">
+              <div class="p-3 rounded neon-shadow" style="background-color: #212529">
                 <p class="fs-5">
                   I am a highly motivated junior software developer with a focus on Python and the Django framework.
                   I possess a strong understanding of the fundamentals of Django, including its architecture, data
                   modeling, and templating language. I also have experience working with other related technologies
-                  such as postgres, docker, and bootstrap.
+                  such as PostgreSQL, Docker, Nginx, and Bootstrap.
+                  <br><br>
+                  When I'm not working, I enjoy keeping active by hitting the gym, engaging in various side projects
+                  that interest me, and hanging out with friends and family.
                   <br><br>
                   I am deeply committed to continuous learning, as I believe
                   it is the key to personal and professional growth.
@@ -56,7 +84,7 @@
             </div>
 
 
-            <div class="col-12 col-md-4 mx-auto my-auto text-center">
+            <div class="col-12 col-md-3 mx-auto my-auto text-center">
 
               <a href="#" class="resume-link" style="text-decoration: none" aria-label="Link to view resume"
                  data-bs-target="#pdfModal" data-bs-toggle="modal">
@@ -245,7 +273,7 @@
 
                 <div class="col-lg-5 my-auto py-2">
 
-                  <div class="p-3 rounded" style="background-color: #212529">
+                  <div class="p-3 rounded neon-shadow" style="background-color: #212529">
                     <p class="fs-5">
                       This is my customized tax calculator, created primarily using Django and Bootstrap. It's a
                       comprehensive tool that incorporates various factors such as self-employment tax, quarterly
@@ -296,7 +324,7 @@
 
                 <div class="col-lg-5 order-2 order-lg-1 my-auto py-2">
 
-                  <div class="p-3 rounded" style="background-color: #212529">
+                  <div class="p-3 rounded neon-shadow" style="background-color: #212529">
                     <p class="fs-5">
                       What began as a simple and modern brand page has evolved into a versatile website
                       that could be customized to fit any number of scenarios. With its use of minimalistic CSS
@@ -414,7 +442,38 @@
             <hr style="color: black">
 
             <div class="row">
+              <div class="col-12 col-md-9 mx-auto pb-5">
 
+                <div class="p-3 rounded" style="background-color: #212529">
+                  <p class="fs-5">
+                    If you have any questions or would like to discuss a project or opportunity, feel free to reach out
+                    to me via the contact form below. I'm always open to connecting and exploring new opportunities.
+                  </p>
+
+                  <form action="#" method="post">
+                    <div class="mb-3">
+                      <label for="name" class="form-label">Name</label>
+                      <input type="text" class="form-control bg-dark text-white" id="name" required>
+                    </div>
+                    <div class="mb-3">
+                      <label for="email" class="form-label">Email address</label>
+                      <input type="email" class="form-control bg-dark text-white" id="email"
+                             aria-describedby="emailHelp" required>
+                      <div id="emailHelp" class="form-text">I'll never share your email with anyone else.</div>
+                    </div>
+                    <div class="mb-3">
+                      <label for="message" class="form-label">Message</label>
+                      <textarea class="form-control bg-dark text-white" id="message" rows="3"
+                                required></textarea>
+                    </div>
+                    <div class="text-center">
+                      <button type="submit" class="btn btn-dark neon-shadow px-5" data-bs-toggle="tooltip"
+                              data-bs-title="COMING SOON" data-bs-placement="bottom">Submit
+                      </button>
+                    </div>
+                  </form>
+                </div>
+              </div>
             </div>
 
           </div>
