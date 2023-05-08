@@ -9,7 +9,6 @@ RUN ln -fs /usr/share/zoneinfo/America/New_York /etc/localtime
 RUN apt-get install g++ unixodbc-dev -y
 RUN apt-get install -y python3-pip
 
-
 WORKDIR /code
 
 COPY requirements.txt /code/requirements.txt

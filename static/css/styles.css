@@ -138,13 +138,35 @@
     text-shadow: 1px 1px 2px #ffffff, 0 0 20px #ffffff, 0 0 3px #c74646;
 }
 
+/*.resume-link {*/
+/*    transition: all .3s ease-in-out;*/
+/*    color: white;*/
+/*}*/
+
+/*.resume-link:hover {*/
+/*    color: #a6a6a6;*/
+/*    animation: shadowCycle 5s linear infinite;*/
+/*}*/
+
 .resume-link {
-    transition: all .3s ease-in-out;
-    color: white;
+    color: #fff; /* Set the text color */
+    transition: color 0.3s ease-in-out; /* Add a smooth transition effect */
 }
 
 .resume-link:hover {
-    color: #a6a6a6;
+    animation: textColorCycle 3s linear infinite;
+}
+
+@keyframes textColorCycle {
+    0%, 25% {
+        color: rgba(77, 248, 45, 1);
+    }
+    50%, 75% {
+        color: rgba(255, 192, 203, 1);
+    }
+    100% {
+        color: rgba(77, 248, 45, 1);
+    }
 }
 
 .social-icon {
